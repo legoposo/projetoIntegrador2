@@ -35,8 +35,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'projetoIntegrador2.urls'
-WSGI_APPLICATION = 'projetoIntegrador2.wsgi.application'
+ROOT_URLCONF = 'core.urls'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
