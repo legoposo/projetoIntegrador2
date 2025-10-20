@@ -5,7 +5,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-%=5r)k$(m&4sz#ycvf9*wvb_6q%hpbkg(bczdlq)gy-5j5sz4m'
 DEBUG = False
-ALLOWED_HOSTS = ['projetointegrador2.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'projetointegrador2-nvi0.onrender.com',  # URL real do Render
+    'localhost',
+    '127.0.0.1',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://projetointegrador2-nvi0.onrender.com',  # necessário com HTTPS
+]
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
